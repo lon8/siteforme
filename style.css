@@ -1,0 +1,95 @@
+Copy code
+header {
+  background-color: #1e90ff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+header nav {
+  margin-top: 1rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+section {
+  margin: 4rem 0;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+section p {
+  margin-bottom: 1rem;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+}
+section ul li {
+  margin-bottom: 1rem;
+}
+section ul li:before {
+  content: '\2022';
+  color: #1e90ff;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+section form input,
+section form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+}
+section form input:focus,
+section form textarea:focus {
+  outline: none;
+  border-color: #1e90ff;
+}
+section form button[type="submit"] {
+  background-color: #1e90ff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+section form button[type="submit"]:hover {
+  background-color: #4ca4ff;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
