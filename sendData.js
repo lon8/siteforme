@@ -1,8 +1,14 @@
-function sendData(){
-    const data = {name = document.getElementById('name'), email: document.getElementById('email'), message=  document.getElementById('message')};
-    console.log(data);
-    // fetch() = {
-
-    // }
-
+function sendData(name, email, message) {
+  const data = { name, email, message };
+  console.log('Income object', data);
+  console.log('hey');
+  fetch('https://jsonplaceholder.typicode.com/todos/3', {
+    method: 'GET',
+  })
+    .then((response) => {
+      return response.text();
+    })
+    .then((text) => {
+      document.getElementById('result').innerHTML = text;
+    });
 }

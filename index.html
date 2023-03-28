@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Data Collection Specialist - Business Card Website</title>
-	<link rel="stylesheet" href="style.css">
-    <link rel="javascript" src="sendData.js"
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Collection Specialist - Business Card Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-	<header>
-		<h1>Data Collection Specialist</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>Hi there! My name is Jane Doe and I am a data collection specialist with over 5 years of experience in the field. I have a strong background in statistics, data analysis, and database management, and I am passionate about using data to drive business decisions.</p>
-			<p>In my current role at XYZ Company, I am responsible for designing and implementing data collection strategies that help our team make informed decisions. I have experience with a wide range of data collection methods, including surveys, interviews, and focus groups, and I am always looking for new and innovative ways to gather insights from our customers and stakeholders.</p>
-			<p>If you're looking for a data collection specialist who can help you turn raw data into actionable insights, I'd love to chat!</p>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Data collection and analysis</li>
-				<li>Database management</li>
-				<li>Survey design and implementation</li>
-				<li>Interview and focus group facilitation</li>
-				<li>Data visualization and reporting</li>
-				<li>Statistical analysis</li>
-				<li>Project management</li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form action="">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<button type="submit">Send</button>
-			</form>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Jane Doe - Data Collection Specialist</p>
-	</footer>
-</body>
+  <body>
+    <header>
+      <h1>Data Collection Specialist</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi there! My name is Jane Doe and I am a data collection specialist
+          with over 5 years of experience in the field. I have a strong
+          background in statistics, data analysis, and database management, and
+          I am passionate about using data to drive business decisions.
+        </p>
+        <p>
+          In my current role at XYZ Company, I am responsible for designing and
+          implementing data collection strategies that help our team make
+          informed decisions. I have experience with a wide range of data
+          collection methods, including surveys, interviews, and focus groups,
+          and I am always looking for new and innovative ways to gather insights
+          from our customers and stakeholders.
+        </p>
+        <p>
+          If you're looking for a data collection specialist who can help you
+          turn raw data into actionable insights, I'd love to chat!
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Data collection and analysis</li>
+          <li>Database management</li>
+          <li>Survey design and implementation</li>
+          <li>Interview and focus group facilitation</li>
+          <li>Data visualization and reporting</li>
+          <li>Statistical analysis</li>
+          <li>Project management</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          onsubmit="console.log('hi'); sendData(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value); return false"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="result">rez</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Jane Doe - Data Collection Specialist</p>
+    </footer>
+    <script type="text/javascript" src="sendData.js"></script>
+  </body>
 </html>
