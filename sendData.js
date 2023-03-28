@@ -11,4 +11,3 @@ function sendData(name, email, message) {
     .then((text) => {
       document.getElementById('result').innerHTML = text;
     });
-}
