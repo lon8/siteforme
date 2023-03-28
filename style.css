@@ -1,4 +1,6 @@
-Copy code
+
+* { margin: 0; padding: 0; }
+
 header {
   background-color: #1e90ff;
   color: #ffffff;
@@ -74,6 +76,7 @@ section form input:focus,
 section form textarea:focus {
   outline: none;
   border-color: #1e90ff;
+  transition: border-color 0.5s;
 }
 section form button[type="submit"] {
   background-color: #1e90ff;
@@ -92,4 +95,8 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 1rem 0;
+}
+
+#about {
+	background-color: #ffffff
 }
