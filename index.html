@@ -54,7 +54,10 @@
       </section>
       <section id="contact">
         <h2>Contact Me</h2>
-        <form action="">
+        <form
+          onsubmit="sendData(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value);
+          return false"
+        >
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email:</label>
@@ -63,10 +66,17 @@
           <textarea id="message" name="message" required></textarea>
           <button type="submit">Send</button>
         </form>
+        <p id="result">rez</p>
       </section>
     </main>
     <footer>
       <p>&copy; 2023 Jane Doe - Data Collection Specialist</p>
     </footer>
+    <script src="./sendData.js"></script>
+    <script>
+      function sendData1() {
+        console.log('hihi');
+      }
+    </script>
   </body>
 </html>

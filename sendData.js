@@ -1,13 +1,13 @@
 function sendData(name, email, message) {
   const data = { name, email, message };
-  console.log('Income object', data);
-  console.log('hey');
+  console.log('Income object ', data);
   fetch('https://jsonplaceholder.typicode.com/todos/3', {
-    method: 'GET',
+    method: 'POST',
   })
     .then((response) => {
       return response.text();
     })
     .then((text) => {
-      document.getElementById('result').innerHTML = text;
+      console.log('result object: ', JSON.parse(text));
     });
+}
